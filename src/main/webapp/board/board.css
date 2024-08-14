@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+ 
+#shop {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.box2 {
+  margin-bottom: 20px;
+}
+
+p.b {
+  font-weight: bold;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+/* 테이블 스타일 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* 링크 스타일 */
+a {
+  text-decoration: none;
+  color: #007bff; 
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 페이지네이션 스타일 */
+div.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+div.pagination a {
+  display: inline-block;
+  padding: 5px 10px; 
+  margin: 0 2px;
+  border: 1px solid #ddd;
+  background-color: #f2f2f2;
+  color: #007bff;
+}
+
+div.pagination a.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+div.pagination a:hover {
+  background-color: #ddd;
+}
+
+.page_section {
+	margin-top: 20px;
+}
+
+.write_button {
+	text-align: right;
+}

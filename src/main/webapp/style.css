@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  padding: 0;  
+}
+
+.main {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h5 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.vhcenter {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+}
+
+/*slide show*/
+div.slideshow {
+  padding: 10px;
+  height: 465px;
+  min-width: 960px;
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+}
+div.slideshow_slides {
+  /*border: 1px solid red;*/
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+div.slideshow_slides a {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+/*네비게이션바를 중앙에 배치*/
+div.slideshow_nav a {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 62px;
+  color: white;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  opacity: 0.4;
+}
+div.slideshow_nav a.prev {
+  margin-left: -462px;
+}
+div.slideshow_nav a.next {
+  margin-left: 400px;
+}
+/*indicator*/
+div.indicator {
+  position: absolute;
+  right: 0;
+  left: 0;
+  text-align: center;
+  bottom: 20px;
+}
+div.indicator a {
+  display: inline-block;
+  font-size: 24px;
+  color: white;
+  padding: 5px;
+  opacity: 0.4;
+}
+div.indicator a.active {
+  color: yellow;
+}

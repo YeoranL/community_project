@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container styling */
+#regForm {
+  width: 80%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  font-size: 15px;
+}
+
+#regForm span {
+	font-size: 12px;
+}
+
+.box {
+  padding: 20px;
+}
+
+h4 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table td.title {
+  background-color: #f9f9f9;
+  padding: 12px;
+  width: 150px;
+  font-weight: 500;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+table td {
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+input[type="text"], input[type="password"] {
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px; 
+  font-size: 16px;
+  width: 150px;
+}
+
+input[type="button"], button {
+  background-color: #007aff; /* Apple blue */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+input[type="button"]:hover, button:hover {
+  background-color: #005bb5;
+}
+
+span {
+  display: block;
+  margin-top: 5px;
+  color: #999;
+}
+
+div#regForm div {
+  text-align: center;
+}
+
+div#regForm div button {
+  margin: 10px; 
+}
+
+/* Specific input field styling */
+input#postcode {
+  width: 150px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+input#addr, input#addr1, input#addr2 {
+  width: 250px;
+  margin-bottom: 5px;
+}
+
+.radio-label {
+  display: inline-flex; /* 인라인 플렉스박스를 사용하여 요소를 나란히 정렬합니다 */
+  align-items: center; /* 요소들을 수직으로 중앙 정렬합니다 */
+  margin-right: 20px; /* 강사/일반 텍스트 사이의 여백을 설정합니다 */
+  cursor: pointer; /* 마우스 포인터를 변경하여 클릭 가능한 것처럼 보이게 합니다 */
+}
+
+.radio-label span {
+  margin-left: 5px; /* 강사/일반 텍스트와 원형 사이의 여백을 설정합니다 */
+}
+
+/* 체크박스를 나란히 정렬하기 위한 스타일 */
+.checkbox-label {
+  display: inline-flex; /* 인라인 플렉스박스를 사용하여 요소를 나란히 정렬합니다 */
+  align-items: center; /* 요소들을 수직으로 중앙 정렬합니다 */
+  margin-right: 20px; /* 체크박스 사이의 여백을 설정합니다 */
+  cursor: pointer; /* 마우스 포인터를 변경하여 클릭 가능한 것처럼 보이게 합니다 */
+}
+
+.checkbox-label span {
+  margin-left: 5px; /* 체크박스와 텍스트 사이의 여백을 설정합니다 */
+}
+
+#lStatus {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.info_section {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 50px;
+}
+
+.button_section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button_section button {
+    margin: 0 10px; /* 버튼 사이의 간격을 조정합니다 */
+    padding: 10px 20px; /* 버튼의 내부 여백을 조정합니다 */
+    background-color: #007bff; /* 배경색을 추가하거나 필요에 따라 수정하세요 */
+    color: white; /* 글자색을 흰색으로 설정합니다 */
+    border: none; /* 테두리를 없앱니다 */
+    border-radius: 5px; /* 모서리를 둥글게 만듭니다 */
+    cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능성을 나타냅니다 */
+}
+
+.button_section button:hover {
+    background-color: #0056b3; /* 마우스를 올렸을 때 배경색을 변경합니다 */
+}
+ 
+/* Responsive design */
+@media screen and (max-width: 600px) {
+  #regForm {
+    width: 90%;
+    padding: 10px;
+  }
+
+  table {
+    width: 100%;
+  }
+ 
+  table td.title {
+    width: auto;
+  }
+
+  input#postcode {
+    width: 150px;
+  }
+}

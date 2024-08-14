@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+#userList {
+  width: 80%;
+  padding: 20px;
+  min-height: 800px;
+  margin: 0 auto;
+} 
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin: 0 auto;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.b {
+  font-weight: bold;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.vhcenter {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  #shop {
+    width: 95%;
+  }
+}
+
+/*exerciseInsertForm*/
+#exInsert {
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px;
+  min-height: 800px;
+} 
